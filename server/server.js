@@ -1,0 +1,34 @@
+
+import express from "express";
+import "dotenv/config";//use environment variables
+import cors from "cors";//allows to connect backend to frontend
+import connectDB from "./configs/db.js";
+import userRouter from "./routes/userRoutes.js";
+import ownerRouter from "./routes/ownerRoutes.js";
+import bookingRouter from "./routes/bookingRoutes.js";
+
+
+ //Intialize Express App
+ const app = express()
+//Connect Database
+ await connectDB()
+
+ //Middleware
+ app.use(cors());
+ app.use(express.json());
+
+ //First Route
+ app.get('/',(req, res)=> res.send("Server is running"))
+ app.use('/api/user', userRouter)
+ app.use('/api/owner', ownerRouter)
+ app.use('/api/bookings', bookingRouter)
+
+
+
+ //port number
+ const PORT = process.env.PORT || 3000;
+
+ app.listen(PORT, ()=> console.log(`Server running on port ${PORT}`))
+
+
+
