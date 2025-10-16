@@ -4,3 +4,10 @@ A fully responsive **Car Rental Website** that allows users to explore, book, an
 
 Live Demo:
 https://car-rental-2r926wvup-neharika-tripathis-projects.vercel.app
+
+User Features
+- Browse and search available cars by brand, model, or category  
+- View detailed specifications and pricing  
+- Book a car with date and time selection  
+- Secure login & registration  
+- View and manage bookings  
