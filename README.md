@@ -11,3 +11,10 @@ User Features
 - Book a car with date and time selection  
 - Secure login & registration  
 - View and manage bookings  
+
+ Admin Features
+- Add, edit, or delete cars  
+- Manage bookings and availability  
+- View rental history and statistics  
+- Authentication and role-based access
+
